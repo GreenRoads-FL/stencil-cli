@@ -122,7 +122,7 @@ Wreck.get(
                 '$ npm install -g @bigcommerce/stencil-cli'.cyan
             );
         } else {
-            dotStencilFile.storeUrl = payload.sslUrl;
+            dotStencilFile.storeUrl = dotStencilFile.normalStoreUrl;
             dotStencilFile.normalStoreUrl = payload.baseUrl;
             dotStencilFile.stencilServerPort = stencilServerPort;
 
