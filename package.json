@@ -45,7 +45,7 @@
   ],
   "dependencies": {
     "@bigcommerce/stencil-paper": "^3.0.0-rc.48",
-    "@bigcommerce/stencil-styles": "2.1.0",
+    "@bigcommerce/stencil-styles": "2.1.1",
     "@hapi/boom": "^8.0.1",
     "@hapi/glue": "^6.2.0",
     "@hapi/h2o2": "^8.3.2",
@@ -108,11 +108,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
-  },
-  "lint-staged": {
-    "*": "npm run lint-and-fix"
   }
 }
