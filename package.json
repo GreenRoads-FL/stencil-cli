@@ -101,14 +101,5 @@
     "jest": "^27.5.1",
     "lint-staged": "^10.4.0",
     "prettier": "2.1.2"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*": "npm run lint-and-fix"
   }
 }
